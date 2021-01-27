@@ -1,0 +1,46 @@
+# site settings
+title: Olga Gertruda
+subtitle: Fine Artist
+email: 
+description: 
+logo: '/assets/images/logo.svg'
+
+# Contact Details
+author:
+street_address: 
+city: 
+state: 
+zip_code: 
+country: 
+phone: 
+facebook_url: 
+instagram_url: 
+youtube_url: 
+
+# Action Buttons
+actions:  
+  # - label: 'Book'
+  #   url: '/book'
+  # - label: 'Test'
+  #   url:  '/test' 
+  # - label: 'Test2'
+  #   url:  '/test2' 
+
+# Formspree
+
+# homepage tiles
+tiles-source: posts # accepts "posts" or "pages"
+tiles-count: 5
+
+# sitemap
+
+# config
+setup: airtable # airtable or blog; controls the section on the home page and other parts of the site
+repository: 
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: # the base hostname & protocol for your site
+permalink: /:title/
+future: true
+markdown: kramdown
+sass:
+  style: compressed
