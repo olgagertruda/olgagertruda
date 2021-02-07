@@ -4,30 +4,31 @@
   <!-- On Demand -->
   {% assign sortedRecords = site.data.art.records | sort: 'fields.date-time' %}
   {% for record in sortedRecords | limit:6 %}
-  <div class="element-item {{ record.fields.category }} 4u 12u$(medium) art" style="background-image:url('{{ record.fields.Attachments[0].url }}');">
+  <div class="element-item {{ record.fields.categories }} 4u 12u$(medium) art" style="background-image:url('{{ record.fields.Attachments[0].url }}');">
   ,<!-- <span class="image"><img src=""/></span> -->
   <button class="modal-button special center" href="#myModal{{ forloop.index }}">View Piece</button>
-  </div>
-  <!-- The Modal -->
-  <div id="myModal{{ forloop.index }}" class="modal">
-    <!-- Modal content -->
-    <div class="modal-content">
-      <img src="{{ record.fields.Attachments[0].url }}"/>
-      <div class="modal-info">        
-        <h1>{{ record.fields.name }}</h1>
-        <h4>{{ record.fields.price }}</h4>
-        <p>{{ record.fields.size }}</p>
-        <p>{{ record.fields.description }}</p>
-        <button class="close special">Return to Gallery</button>
-      </div>
-    </div>
   </div>
   {% endfor %}
 </div>
 
-<!-- <ul class="actions vertical">
-  <li><a href="../" class="button special">View All</a></li>
-</ul> -->
+
+{% assign sortedRecords = site.data.art.records | sort: 'fields.date-time' %}
+{% for record in sortedRecords | limit:6 %}
+<!-- The Modal -->
+<div id="myModal{{ forloop.index }}" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <img src="{{ record.fields.Attachments[0].url }}"/>
+    <div class="modal-info">        
+      <button class="close special" style="margin-bottom: 2em;">Return to Gallery</button>
+      <h1>{{ record.fields.name }}</h1>
+      <h4>{{ record.fields.price }}</h4>
+      <p>{{ record.fields.size }}</p>
+      <p>{{ record.fields.description }}</p>
+    </div>
+  </div>
+</div>
+{% endfor %}
 
 
 <script type="text/javascript"> 
