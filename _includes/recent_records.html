@@ -3,17 +3,17 @@
 
   <!-- On Demand -->
   {% assign sortedRecords = site.data.art.records | sort: 'fields.date-time' %}
-  {% for record in sortedRecords | limit:6 %}
-  <div class="element-item {{ record.fields.categories }} 4u 12u$(medium) art" style="background-image:url('{{ record.fields.Attachments[0].url }}');">
-  ,<!-- <span class="image"><img src=""/></span> -->
-  <button class="modal-button special center" href="#myModal{{ forloop.index }}">View Piece</button>
+  {% for record in sortedRecords | limit:12 %}
+  <div class="element-item {{ record.fields.categories }} 4u 12u$(medium) art" style="background-image:url('{{ record.fields.Attachments[0].url }}'); ">
+    ,<!-- <span class="image"><img src=""/></span> -->
+    <button class="modal-button special center" href="#myModal{{ forloop.index }}">View Piece</button>
   </div>
   {% endfor %}
 </div>
 
 
 {% assign sortedRecords = site.data.art.records | sort: 'fields.date-time' %}
-{% for record in sortedRecords | limit:6 %}
+{% for record in sortedRecords | limit:12 %}
 <!-- The Modal -->
 <div id="myModal{{ forloop.index }}" class="modal">
   <!-- Modal content -->

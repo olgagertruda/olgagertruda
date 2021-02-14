@@ -1,5 +1,18 @@
 /*Modals*/
+.art {
+  background-size: cover; 
+  background-position: center top;
+  padding: 20em 0 0 0em;
+  box-sizing: border-box;
+
+  button {
+    left: 0;
+
+  }
+}
+
 .modal {
+  display: none;
   margin: 100px auto;
   padding: 2em;
   background: #fff;
