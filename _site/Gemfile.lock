@@ -168,8 +168,8 @@ DEPENDENCIES
   dotenv
   github-pages
   html-proofer
+  httparty
   jekyll
-  jekyll-sitemap
   jekyll-watch
   json
 
