@@ -168,10 +168,13 @@ DEPENDENCIES
   dotenv
   github-pages
   html-proofer
-  httparty
   jekyll
+  jekyll-sitemap
   jekyll-watch
   json
+
+RUBY VERSION
+   ruby 2.7.1p83
 
 BUNDLED WITH
    2.1.4

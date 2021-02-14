@@ -5,6 +5,8 @@ email:
 description: 
 logo: '/assets/images/logo.svg'
 
+github: [metadata]
+
 # Contact Details
 author:
 street_address: 
