@@ -21,10 +21,10 @@
     <img src="{{ record.fields.Attachments[0].url }}"/>
     <div class="modal-info">        
       <button class="close special" style="margin-bottom: 2em;">Return to Gallery</button>
-      <h1>{{ record.fields.name }}</h1>
-      <h4>{{ record.fields.price }}</h4>
-      <p>{{ record.fields.size }}</p>
-      <p>{{ record.fields.description }}</p>
+      {% if record.fields.name %}<h2>{{ record.fields.name }}</h2>{% endif %}
+      {% if record.fields.price %}<h5>{{ record.fields.price }}</h5>{% endif %}
+      {% if record.fields.size %}<p>{{ record.fields.size }}</p>{% endif %}
+      {% if record.fields.description %}<p>{{ record.fields.description }}</p>{% endif %}
     </div>
   </div>
 </div>
