@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+    {% include head.html %}
+
+    <body>
+
+        {% include header.html %}
+
+
+            <!-- Recent Records -->
+            {% if site.data.art %}
+                <section class="classes">
+                  <div class="button-group filter-button-group" style="margin-bottom: 1em;">
+                    <a class="button special active" data-filter="*">All</a>
+                    <a class="button special" data-filter=".original">Original</a>
+                    <a class="button special" data-filter=".print">Print Available</a>
+                  </div> 
+                </section>
+
+                <!-- Artwork  -->
+                <div class="grid row" style="position: relative; display: flex; justify-content:flex-start; align-items: stretch; flex-flow: row wrap; width: 100%; margin:0;">
+
+                  <!-- On Demand -->
+                  {% assign sortedRecords = site.data.art.records | sort: 'fields.date-time' %}
+                  {% for record in sortedRecords %}
+                  {% if record.fields.categories == page.category %}
+                  <div class="element-item {{ record.fields.categories }} {{ record.fields.availability[0] }} {{ record.fields.availability[1] }}  4u 12u$(medium) art" style="background-image:url('{{ record.fields.Attachments[0].url }}'); ">
+                    <button class="modal-button special center" href="#myModal{{ forloop.index }}">View Piece</button>
+                  </div>
+                  {% endif %}
+                  {% endfor %}
+                </div>
+
+
+                {% assign sortedRecords = site.data.art.records | sort: 'fields.date-time' %}
+                {% for record in sortedRecords %}
+                <!-- The Modal -->
+                <div id="myModal{{ forloop.index }}" class="modal">
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <img src="{{ record.fields.Attachments[0].url }}"/>
+                    <div class="modal-info">        
+                      <button class="close special" style="margin-bottom: 2em;">Return to Gallery</button>
+                      {% if record.fields.name %}<h2>{{ record.fields.name }}</h2>{% endif %}
+                      {% if record.fields.price %}<h5>{{ record.fields.price }}</h5>{% endif %}
+                      {% if record.fields.size %}<p>{{ record.fields.size }}</p>{% endif %}
+                      {% if record.fields.description %}<p>{{ record.fields.description }}</p>{% endif %}
+                    </div>
+                  </div>
+                </div>
+                {% endfor %}
+
+
+                <script type="text/javascript"> 
+                // Get the button that opens the modal
+                var btn = document.querySelectorAll("button.modal-button");
+
+                // All page modals
+                var modals = document.querySelectorAll('.modal');
+
+                // Get the <span> element that closes the modal
+                var spans = document.getElementsByClassName("close");
+
+                // When the user clicks the button, open the modal
+                for (var i = 0; i < btn.length; i++) {
+                 btn[i].onclick = function(e) {
+                    e.preventDefault();
+                    modal = document.querySelector(e.target.getAttribute("href"));
+                    modal.style.display = "block";
+                 }
+                }
+
+                // When the user clicks on <span> (x), close the modal
+                for (var i = 0; i < spans.length; i++) {
+                 spans[i].onclick = function() {
+                    for (var index in modals) {
+                      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+                    }
+                 }
+                }
+
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                    if (event.target.classList.contains('modal')) {
+                     for (var index in modals) {
+                      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+                     }
+                    }
+                }
+                </script>
+
+                {% endif %}
+
+
+                <script type="text/javascript"> 
+                // Get the button that opens the modal
+                var btn = document.querySelectorAll("button.modal-button");
+
+                // All page modals
+                var modals = document.querySelectorAll('.modal');
+
+                // Get the <span> element that closes the modal
+                var spans = document.getElementsByClassName("close");
+
+                // When the user clicks the button, open the modal
+                for (var i = 0; i < btn.length; i++) {
+                 btn[i].onclick = function(e) {
+                    e.preventDefault();
+                    modal = document.querySelector(e.target.getAttribute("href"));
+                    modal.style.display = "block";
+                 }
+                }
+
+                // When the user clicks on <span> (x), close the modal
+                for (var i = 0; i < spans.length; i++) {
+                 spans[i].onclick = function() {
+                    for (var index in modals) {
+                      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+                    }
+                 }
+                }
+
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                    if (event.target.classList.contains('modal')) {
+                     for (var index in modals) {
+                      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+                     }
+                    }
+                }
+                </script>
+
+
+            {% include footer.html %}
+        </div>
+
+    </body>
+
+</html>
+
+<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.js"></script>
+<script>
+  // init Isotope
+  var $grid = $('.grid').isotope({
+    // options
+    
+  });
+  // filter items on button click
+  $('.filter-button-group').on( 'click', 'a', function() {
+    var filterValue = $(this).attr('data-filter');
+    $grid.isotope({ filter: filterValue });
+  });
+  $('.button-group a.button').on('click', function(){
+    $('.button-group a.button').removeClass('active');
+    $(this).addClass('active');
+  });
+</script>

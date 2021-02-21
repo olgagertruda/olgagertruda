@@ -34,32 +34,20 @@
             </section>
             {% endif %}
 
-
-            <!-- Recent Records -->
-            {% if site.setup == "airtable" %}
-                {% if site.data.art %}
-                <section class="classes">
-                  <!-- <h3 style="margin-bottom: 0;">Filters</h3> -->
-                  <div class="button-group filter-button-group" style="margin-bottom: 1em;">
-                    <a class="button special active" data-filter="*">All</a>
-                    <a class="button special" data-filter=".drawing">Drawing</a>
-                    <a class="button special" data-filter=".ink-painting">Ink Painting</a>
-                    <a class="button special" data-filter=".oil">Oil</a>
-                    <a class="button special" data-filter=".sketch">Sketch</a>
-                    <a class="button special" data-filter=".watercolour">Watercolour</a>
-                    <!-- {% for category in site.categories %}
-                      <a class="button" data-filter=".{{ category | first }}">{{ category | first }}</a>
-                    {% endfor %} -->
-                  </div> 
-                </section>
-                {% include recent_records.html %}
-                {% endif %}
-            {% endif %}
-
-            <!-- Blog Articles -->
-            {% if site.setup == "blog" %}
-                {% include recent_posts.html %}
-            {% endif %}
+            <!-- Categories -->
+            <section>
+                <div class="inner row">
+                    <div class="4u 12u(small)">
+                        <p>test</p>
+                    </div>
+                    <div class="4u 12u(small)">
+                        <p>test</p>
+                    </div>
+                    <div class="4u 12u(small)">
+                        <p>test</p>
+                    </div>
+                </div>
+            </section>
 
 
             {% include footer.html %}
