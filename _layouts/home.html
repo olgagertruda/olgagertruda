@@ -41,7 +41,7 @@
                     {% for page in sorted_pages %}
                         {% if page.layout != "home" and page.nav-menu == true | sort:'title' %}
                         <div class="element-item {{ page.genre }} 4u 12u$(medium) art" style="background-image:url('{{ page.image }}'); ">
-                            <a href="../{{ page.url }}">
+                            <a href="{{ page.url | absolute_url }}">
                                 <button class="modal-button special center" >{{ page.title }}</button>
                             </a>
                           </div>
