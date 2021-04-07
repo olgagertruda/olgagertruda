@@ -1,7 +1,7 @@
 ---
 layout: art
 title: Modern
-image: '../assets/images/modern.jpeg'
+image: 'assets/images/modern.jpeg'
 author: null
 show_tile: false
 genre: modern
