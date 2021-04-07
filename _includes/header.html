@@ -14,7 +14,7 @@
 		<ul class="links">
 	        {% for page in site.pages %}
 			    {% if page.layout == "home"%}
-			        <li><a href="{{ site.baseurl | relative_url }}" style="text-decoration: none;"><h4 style="margin: 0;">{{ page.title }}</h4></a></li>
+			        <li><a href="{{ site.baseurl | absolute_url }}" style="text-decoration: none;"><h4 style="margin: 0;">{{ page.title }}</h4></a></li>
 		    	{% endif %}
 			{% endfor %}
 			{% assign sorted_pages = site.html_pages | 'title' %}
