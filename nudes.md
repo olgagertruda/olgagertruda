@@ -1,8 +1,9 @@
 ---
 layout: art
-title: Oil Paintings
+title: Nudes
+image: '../assets/images/nudes.jpeg'
 author: null
 show_tile: false
-category: oil
+genre: nude
 nav-menu: true
 ---

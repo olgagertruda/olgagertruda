@@ -1,3 +1,8 @@
+body.modal-open {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
 /*Modals*/
 .art {
   background-size: cover; 
@@ -63,7 +68,6 @@
   text-decoration: none;
   cursor: pointer;
 }
-
 
 .overlay {
   position: sticky;

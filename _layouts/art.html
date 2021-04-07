@@ -11,10 +11,13 @@
             <!-- Recent Records -->
             {% if site.data.art %}
                 <section class="classes">
-                  <div class="button-group filter-button-group" style="margin-bottom: 1em;">
+                  <div  class="button-group filter-button-group" style="margin-bottom: 1em;">
                     <a class="button special active" data-filter="*">All</a>
-                    <a class="button special" data-filter=".original">Original</a>
-                    <a class="button special" data-filter=".print">Print Available</a>
+                    <a id="acrylic" class="button special" data-filter=".acrylic">Acrylic (<span id="countAcrylic">0</span>)</a>
+                    <a id="drawing" class="button special" data-filter=".drawing">Drawing (<span id="countDrawing">0</span>)</a>
+                    <a id="ink" class="button special" data-filter=".ink-painting">Ink Painting (<span id="countInk">0</span>)</a>
+                    <a id="oil" class="button special" data-filter=".oil">Oil (<span id="countOil">0</span>)</a>
+                    <a id="watercolour" class="button special" data-filter=".watercolour">Watercolour (<span id="countWatercolour">0</span>)</a>
                   </div> 
                 </section>
 
@@ -24,9 +27,9 @@
                   <!-- On Demand -->
                   {% assign sortedRecords = site.data.art.records | sort: 'fields.date-time' %}
                   {% for record in sortedRecords %}
-                  {% if record.fields.categories == page.category %}
-                  <div class="element-item {{ record.fields.categories }} {{ record.fields.availability[0] }} {{ record.fields.availability[1] }}  4u 12u$(medium) art" style="background-image:url('{{ record.fields.Attachments[0].url }}'); ">
-                    <button class="modal-button special center" href="#myModal{{ forloop.index }}">View Piece</button>
+                  {% if record.fields.genre == page.genre %}
+                  <div class="element-item {{ record.fields.genre }} {{ record.fields.categories }} {{ record.fields.availability[0] }} {{ record.fields.availability[1] }}  4u 12u$(medium) art" style="background-image:url('{{ record.fields.Attachments[0].url }}'); ">
+                    <button class="modal-button special center" href="#myModal{{ forloop.index }}">{{ record.fields.name }}</button>
                   </div>
                   {% endif %}
                   {% endfor %}
@@ -41,10 +44,9 @@
                   <div class="modal-content">
                     <img src="{{ record.fields.Attachments[0].url }}"/>
                     <div class="modal-info">        
-                      <button class="close special" style="margin-bottom: 2em;">Return to Gallery</button>
-                      {% if record.fields.name %}<h2>{{ record.fields.name }}</h2>{% endif %}
-                      {% if record.fields.price %}<h5>{{ record.fields.price }}</h5>{% endif %}
-                      {% if record.fields.size %}<p>{{ record.fields.size }}</p>{% endif %}
+                      <button class="close special" style="margin-bottom: 2em;">View all {{ page.title }}</button>
+                      {% if record.fields.name %}<h2 style="margin-bottom: 0;">{{ record.fields.name }}</h2>{% endif %}
+                      <h5 style="text-transform: lowercase;">{% if record.fields.price %}{{ record.fields.price }}&nbsp;&nbsp;|&nbsp;&nbsp;{% endif %}{% if record.fields.size %}{{ record.fields.size }}{% endif %}</h5>
                       {% if record.fields.description %}<p>{{ record.fields.description }}</p>{% endif %}
                     </div>
                   </div>
@@ -141,6 +143,54 @@
 
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.js"></script>
+<script>
+// Modal counts
+  function countTypes() {
+  var countAcrylic = document.getElementsByClassName('acrylic').length;
+  if (countAcrylic === 0) {
+  document.getElementById('acrylic').style.display = 'none';
+  console.log('hide countAcrylic');
+  } else {
+  document.getElementById('countAcrylic').innerHTML = countAcrylic;
+  console.log(countAcrylic);
+  }
+  
+  var countDrawing = document.getElementsByClassName('drawing').length;
+  if (countDrawing === 0) {
+  document.getElementById('drawing').style.display = 'none';
+  console.log('hide countDrawing');
+  } else {
+  document.getElementById('countDrawing').innerHTML = countDrawing;
+  console.log(countDrawing);
+  }
+  var countInk = document.getElementsByClassName('ink-painting').length;
+  if (countInk === 0) {
+  document.getElementById('ink').style.display = 'none';
+  console.log('hide countDrawing');
+  } else {
+  document.getElementById('countInk').innerHTML = countInk;
+  console.log(countInk);
+  }
+  var countOil = document.getElementsByClassName('oil').length;
+  if (countOil === 0) {
+  document.getElementById('oil').style.display = 'none';
+  console.log('hide countDrawing');
+  } else {
+  document.getElementById('countOil').innerHTML = countOil;
+  console.log(countOil);
+  }
+  var countWatercolour = document.getElementsByClassName('watercolour').length;
+  if (countWatercolour === 0) {
+  document.getElementById('watercolour').style.display = 'none';
+  console.log('hide countDrawing');
+  } else {
+  document.getElementById('countWatercolour').innerHTML = countWatercolour;
+  console.log(countWatercolour);
+  }
+  }
+
+  window.onload = countTypes;
+</script>
 <script>
   // init Isotope
   var $grid = $('.grid').isotope({

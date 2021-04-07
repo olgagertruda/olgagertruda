@@ -26,7 +26,7 @@
                             {% for action in site.actions limit:1 %}
                             <li><a href="{{ action.url | absolute_url }}" class="special button fit">{{ action.label }}</a></li>
                             {% endfor %}
-                            {% for action in site.actions offset:1 %}
+                            {% for action in site.actions %}
                             <li><a href="{{ action.url | absolute_url }}" class="button fit">{{ action.label }}</a></li>
                             {% endfor %}
                         </ul>
@@ -36,18 +36,29 @@
 
             <!-- Categories -->
             <section>
-                <div class="inner row">
-                    <div class="4u 12u(small)">
-                        <p>test</p>
-                    </div>
-                    <div class="4u 12u(small)">
-                        <p>test</p>
-                    </div>
-                    <div class="4u 12u(small)">
-                        <p>test</p>
-                    </div>
-                </div>
+                <div class="grid row" style="position: relative; display: flex; justify-content:flex-start; align-items: stretch; flex-flow: row wrap; width: 100%; margin:0;">
+                    {% assign sorted_pages = site.html_pages | 'title' %}
+                    {% for page in sorted_pages %}
+                        {% if page.layout != "home" and page.nav-menu == true | sort:'title' %}
+                        <div class="element-item {{ page.genre }} 4u 12u$(medium) art" style="background-image:url('{{ page.image }}'); ">
+                            <a href="../{{ page.url }}">
+                                <button class="modal-button special center" >{{ page.title }}</button>
+                            </a>
+                          </div>
+                        {% endif %}
+                    {% endfor %}
             </section>
+
+
+
+                  <!-- On Demand -->
+                  {% assign sortedRecords = site.data.art.records | sort: 'fields.date-time' %}
+                  {% for record in sortedRecords %}
+                  {% if record.fields.genre == page.genre %}
+                  
+                  {% endif %}
+                  {% endfor %}
+                </div>
 
 
             {% include footer.html %}
