@@ -20,20 +20,20 @@
 
 // Font.
 	$font: (
-		family:				('Montserrat Alternates', sans-serif);
-		header:				('Montserrat Alternates', sans-serif);
+		family:				('Montserrat Alternates', serif),
+		header:				('Montserrat Alternates', sans-serif),
 		family-fixed:		('Libre Baskerville', serif),
 		cursive:			('Libre Baskerville', serif),
 		weight:				300,
 		weight-bold:		600,
-		letter-spacing:		0.0,
-		letter-spacing-alt:	0.0
+		letter-spacing:		0.025em,
+		letter-spacing-alt:	0.25em
 	);
  
 // Palette.
 	$palette: (
 		bg:					#ffffff,
-		bg-alt:				#ffffff,
+		bg-alt:				#FFEA78,
 		fg:					#232031,
 		fg-bold:			#232031,
 		fg-light:			#FA971C,
