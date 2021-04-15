@@ -40,27 +40,13 @@
                     {% assign sorted_pages = site.html_pages | 'title' %}
                     {% for page in sorted_pages %}
                         {% if page.layout != "home" and page.nav-menu == true | sort:'title' %}
-                        <div class="element-item {{ page.genre }} 4u 12u$(medium) art" style="background-image:url('{{ page.image }}'); ">
-                            <a href="{{ page.url | absolute_url }}">
-                                <button class="modal-button special center" >{{ page.title }}</button>
-                            </a>
-                          </div>
+                        <a class="element-item {{ page.genre }} 4u 12u$(medium) art" style="background-image:url('{{ page.image }}'); " href="{{ page.url | absolute_url }}">
+                            <button class="modal-button special center" >{{ page.title }}</button>
+                        </a>
                         {% endif %}
                     {% endfor %}
-            </section>
-
-
-
-                  <!-- On Demand -->
-                  {% assign sortedRecords = site.data.art.records | sort: 'fields.date-time' %}
-                  {% for record in sortedRecords %}
-                  {% if record.fields.genre == page.genre %}
-                  
-                  {% endif %}
-                  {% endfor %}
                 </div>
-
-
+            </section>
             {% include footer.html %}
         </div>
 

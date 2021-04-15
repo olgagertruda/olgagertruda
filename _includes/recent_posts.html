@@ -1,16 +1,18 @@
 <section id="one" class="tiles">
   {% for post in site.posts %}
   {% if site.tiles-source == 'posts' %}
-  <article>
-    <span class="image">
-      <img src="{{ post.image }}" alt="{{ post.image-alt }}" />
-    </span>
-    <header class="major">
-      <h1><a href="{{ post.url  | relative_url }}" class="link">{{ post.title }}</a></h1>
+  <a href="{{ post.url  | relative_url }}" class="link">
+    <article>
+      <span class="image">
+        <img src="{{ post.image }}" alt="{{ post.image-alt }}" />
+      </span>
+      <header class="major">
+        <h1>{{ post.title }}</h1>
 <!--       <h5>{% for category in post.categories limit:1 %}{{ category }}{% endfor %}{% for category in post.categories offset:1 %}, {{ category }}{% endfor %}</h5> -->
-      {% if post.description %}<p style="text-transform: normal; ">{{ post.description }}</p>{% endif %}
-    </header>
-  </article>
+        {% if post.description %}<p style="text-transform: normal; ">{{ post.description }}</p>{% endif %}
+      </header>
+    </article>
+  </a>
   {% endif %}
   {% endfor %}
   {% for page in site.html_pages %}

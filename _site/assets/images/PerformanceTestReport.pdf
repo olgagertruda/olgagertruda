@@ -1,0 +1,553 @@
+%PDF-1.3
+%ºß¬à
+3 0 obj
+<</Type /Page
+/Parent 1 0 R
+/Resources 2 0 R
+/MediaBox [0 0 595.28 841.89]
+/Contents 4 0 R
+>>
+endobj
+4 0 obj
+<<
+/Length 4242
+>>
+stream
+0.20 w
+0 G
+BT
+/F10 20 Tf
+23.00 TL
+1.000 0.000 0.000 rg
+60.00 761.89 Td
+(Performance Test Results Report) Tj
+ET
+BT
+/F10 14 Tf
+16.10 TL
+0.000 0.000 0.400 rg
+60.00 701.89 Td
+(Basic Performance Test -) Tj
+ET
+0.00 0.60 0.30 rg
+0.78 G
+0.00 w
+0.00 0.60 0.30 rg
+0.78 G
+0.00 w
+0.00 0.60 0.30 rg
+0.78 G
+0.00 w
+0.00 0.60 0.30 rg
+0.78 G
+0.00 w
+0.96 g
+0.78 G
+0.00 w
+0.96 g
+0.78 G
+0.00 w
+0.96 g
+0.78 G
+0.00 w
+0.96 g
+0.78 G
+0.00 w
+0.00 0.60 0.30 rg
+0.78 G
+0.00 w
+0.00 0.60 0.30 rg
+0.78 G
+0.00 w
+0.00 0.60 0.30 rg
+0.78 G
+0.00 w
+0.00 0.60 0.30 rg
+0.78 G
+0.00 w
+0.96 g
+0.78 G
+0.00 w
+0.96 g
+0.78 G
+0.00 w
+0.96 g
+0.78 G
+0.00 w
+0.96 g
+0.78 G
+0.00 w
+0.00 0.60 0.30 rg
+0.78 G
+0.00 w
+60.00 681.89 236.79 -22.65 re
+f
+BT
+/F10 11 Tf
+12.65 TL
+1.000 g
+65.00 667.54 Td
+(Time Stamp) Tj
+ET
+0.00 0.60 0.30 rg
+0.78 G
+0.00 w
+296.79 681.89 67.89 -22.65 re
+f
+BT
+/F10 11 Tf
+12.65 TL
+1.000 g
+301.79 667.54 Td
+(Latency) Tj
+ET
+0.00 0.60 0.30 rg
+0.78 G
+0.00 w
+364.68 681.89 89.22 -22.65 re
+f
+BT
+/F10 11 Tf
+12.65 TL
+1.000 g
+369.68 667.54 Td
+(Download) Tj
+ET
+0.00 0.60 0.30 rg
+0.78 G
+0.00 w
+453.90 681.89 81.38 -22.65 re
+f
+BT
+/F10 11 Tf
+12.65 TL
+1.000 g
+458.90 667.54 Td
+(Upload) Tj
+ET
+0.96 g
+0.78 G
+0.00 w
+60.00 659.24 236.79 -22.65 re
+f
+BT
+/F9 11 Tf
+12.65 TL
+0.314 g
+65.00 644.89 Td
+(Wednesday 14 April 2021 | 5:57:17) Tj
+ET
+0.96 g
+0.78 G
+0.00 w
+296.79 659.24 67.89 -22.65 re
+f
+BT
+/F9 11 Tf
+12.65 TL
+0.314 g
+301.79 644.89 Td
+(41 Ms) Tj
+ET
+0.96 g
+0.78 G
+0.00 w
+364.68 659.24 89.22 -22.65 re
+f
+BT
+/F9 11 Tf
+12.65 TL
+0.314 g
+369.68 644.89 Td
+(24.64 Mbps) Tj
+ET
+0.96 g
+0.78 G
+0.00 w
+453.90 659.24 81.38 -22.65 re
+f
+BT
+/F9 11 Tf
+12.65 TL
+0.314 g
+458.90 644.89 Td
+(8.79 Mbps) Tj
+ET
+0.78 G
+0.00 w
+BT
+/F10 14 Tf
+16.10 TL
+0.000 0.000 0.400 rg
+60.00 601.89 Td
+(Advanced Performance Test -) Tj
+ET
+0.00 0.30 0.60 RG
+0.00 0.60 0.30 rg
+60.00 581.89 475.00 -22.00 re
+B
+BT
+/F10 11 Tf
+12.65 TL
+1.000 g
+63.00 569.24 Td
+(Download Test) Tj
+ET
+0.88 G
+0.94 g
+60.00 559.89 475.00 -22.00 re
+B
+BT
+/F9 11 Tf
+12.65 TL
+0.376 g
+63.00 547.24 Td
+(Download speed achieved during the test was 24.64 Mbps) Tj
+ET
+0.94 g
+60.00 537.89 475.00 -22.00 re
+B
+BT
+/F9 11 Tf
+12.65 TL
+0.376 g
+63.00 525.24 Td
+(For your connection, the acceptable range of speeds is  40-44.49 Mbps) Tj
+ET
+0.94 g
+60.00 515.89 475.00 -22.00 re
+B
+BT
+/F9 11 Tf
+12.65 TL
+0.376 g
+63.00 503.24 Td
+(Your DSL Connection Rate: 0 Mbps\(DOWN-STREAM\),0 Mbps\(UP-STREAM\)) Tj
+ET
+0.94 g
+60.00 493.89 475.00 -22.00 re
+B
+BT
+/F9 11 Tf
+12.65 TL
+0.376 g
+63.00 481.24 Td
+(For your connection, the maximum achievable download speed is 44.49 Mbps) Tj
+ET
+0.94 g
+60.00 471.89 475.00 -22.00 re
+B
+BT
+/F9 11 Tf
+12.65 TL
+0.376 g
+63.00 459.24 Td
+(IP Profile for your line is 44.49 Mbps) Tj
+ET
+0.00 0.30 0.60 RG
+0.00 0.60 0.30 rg
+60.00 431.89 475.00 -22.00 re
+B
+BT
+/F10 11 Tf
+12.65 TL
+1.000 g
+63.00 419.24 Td
+(Upload Test) Tj
+ET
+0.88 G
+0.94 g
+60.00 411.89 475.00 -22.00 re
+B
+BT
+/F9 11 Tf
+12.65 TL
+0.376 g
+63.00 399.24 Td
+(Upload speed achieved during the test was 8.79 Mbps) Tj
+ET
+0.94 g
+60.00 389.89 475.00 -22.00 re
+B
+BT
+/F9 11 Tf
+12.65 TL
+0.376 g
+63.00 377.24 Td
+(For your connection, the maximum achievable upload speed is 20 Mbps) Tj
+ET
+0.94 g
+60.00 367.89 475.00 -22.00 re
+B
+BT
+/F9 11 Tf
+12.65 TL
+0.376 g
+63.00 355.24 Td
+(IP Profile for your line is 20 Mbps) Tj
+ET
+BT
+/F10 14 Tf
+16.10 TL
+0.000 0.000 0.400 rg
+60.00 311.89 Td
+(Summary Advanced Performance Test -) Tj
+ET
+0.00 0.60 0.30 rg
+0.78 G
+0.00 w
+0.96 g
+0.78 G
+0.00 w
+0.00 0.60 0.30 rg
+0.78 G
+0.00 w
+0.96 g
+0.78 G
+0.00 w
+0.00 0.60 0.30 rg
+0.78 G
+0.00 w
+60.00 291.89 475.28 -22.65 re
+f
+BT
+/F10 11 Tf
+12.65 TL
+1.000 g
+65.00 277.54 Td
+(Result Message) Tj
+ET
+0.96 g
+0.78 G
+0.00 w
+60.00 269.24 475.28 -73.25 re
+f
+BT
+/F9 11 Tf
+12.65 TL
+0.314 g
+65.00 254.89 Td
+(This test was not conclusive and further testing is required. This might be useful for your Broadband) Tj
+T* (Service Provider to investigate the fault. Note:An error occurred while trying to retrieve additional details) Tj
+T* (regarding your service. As a result we are unable to determine if the speed you received during the) Tj
+T* (upstream test is acceptable for you service. Please re-run the test if you require this additional) Tj
+T* (information. Please visit the Speed Test Guidance if you are unable to understand the test results.) Tj
+ET
+0.78 G
+0.00 w
+endstream
+endobj
+1 0 obj
+<</Type /Pages
+/Kids [3 0 R ]
+/Count 1
+>>
+endobj
+5 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+6 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+7 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-Oblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+8 0 obj
+<<
+/Type /Font
+/BaseFont /Helvetica-BoldOblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+9 0 obj
+<<
+/Type /Font
+/BaseFont /Courier
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+10 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+11 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-Oblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+12 0 obj
+<<
+/Type /Font
+/BaseFont /Courier-BoldOblique
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+13 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Roman
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+14 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Bold
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+15 0 obj
+<<
+/Type /Font
+/BaseFont /Times-Italic
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+16 0 obj
+<<
+/Type /Font
+/BaseFont /Times-BoldItalic
+/Subtype /Type1
+/Encoding /WinAnsiEncoding
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+17 0 obj
+<<
+/Type /Font
+/BaseFont /ZapfDingbats
+/Subtype /Type1
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+18 0 obj
+<<
+/Type /Font
+/BaseFont /Symbol
+/Subtype /Type1
+/FirstChar 32
+/LastChar 255
+>>
+endobj
+2 0 obj
+<<
+/ProcSet [/PDF /Text /ImageB /ImageC /ImageI]
+/Font <<
+/F1 5 0 R
+/F2 6 0 R
+/F3 7 0 R
+/F4 8 0 R
+/F5 9 0 R
+/F6 10 0 R
+/F7 11 0 R
+/F8 12 0 R
+/F9 13 0 R
+/F10 14 0 R
+/F11 15 0 R
+/F12 16 0 R
+/F13 17 0 R
+/F14 18 0 R
+>>
+/XObject <<
+>>
+>>
+endobj
+19 0 obj
+<<
+/Producer (jsPDF 1.5.3)
+/CreationDate (D:20210414055717+01'00')
+>>
+endobj
+20 0 obj
+<<
+/Type /Catalog
+/Pages 1 0 R
+/OpenAction [3 0 R /FitH null]
+/PageLayout /OneColumn
+>>
+endobj
+xref
+0 21
+0000000000 65535 f 
+0000004418 00000 n 
+0000006235 00000 n 
+0000000015 00000 n 
+0000000124 00000 n 
+0000004475 00000 n 
+0000004600 00000 n 
+0000004730 00000 n 
+0000004863 00000 n 
+0000005000 00000 n 
+0000005123 00000 n 
+0000005252 00000 n 
+0000005384 00000 n 
+0000005520 00000 n 
+0000005648 00000 n 
+0000005775 00000 n 
+0000005904 00000 n 
+0000006037 00000 n 
+0000006139 00000 n 
+0000006483 00000 n 
+0000006569 00000 n 
+trailer
+<<
+/Size 21
+/Root 20 0 R
+/Info 19 0 R
+/ID [ <FE677B9D0816F5F2DC9B0B97388A0E1A> <FE677B9D0816F5F2DC9B0B97388A0E1A> ]
+>>
+startxref
+6673
+%%EOF
