@@ -28,9 +28,9 @@
                   {% assign sortedRecords = site.data.art.records | sort: 'fields.date-time' %}
                   {% for record in sortedRecords %}
                   {% if record.fields.genre == page.genre %}
-                  <div class="element-item {{ record.fields.genre }} {{ record.fields.categories }} {{ record.fields.availability[0] }} {{ record.fields.availability[1] }}  4u 12u$(medium) art" style="background-image:url('{{ record.fields.Attachments[0].url }}'); ">
-                    <button class="modal-button special center" href="#myModal{{ forloop.index }}">{{ record.fields.name }}</button>
-                  </div>
+                  <a href="#myModal{{ forloop.index }}" class="element-item {{ record.fields.genre }} {{ record.fields.categories }} {{ record.fields.availability[0] }} {{ record.fields.availability[1] }}  4u 12u$(medium) art" style="background-image:url('{{ record.fields.Attachments[0].url }}');>
+                    <button class="modal-button special center">{{ record.fields.name }}</button>
+                  </a>
                   {% endif %}
                   {% endfor %}
                 </div>
