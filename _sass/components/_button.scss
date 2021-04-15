@@ -113,13 +113,13 @@
 		}
 
 		&.special {
-			background-color: _palette(accent2);
+			background-color: _palette(accent3);
 			box-shadow: none;
-			color: _palette(bg);
+			color: _palette(accent1);
 
 			&:hover, &:active {
-				background-color: _palette(highlight);
-				color: _palette(bg) !important;
+				background-color: _palette(accent3);
+				color: _palette(accent1) !important;
 			}
 
 			&:active {

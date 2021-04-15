@@ -3,7 +3,20 @@ body.modal-open {
   overflow-y: hidden;
 }
 
-/*Modals*/
+/* Tile Hovering */
+
+.desaturate { 
+  filter: grayscale(20%); 
+  opacity: 80%;
+}
+
+.desaturate:hover {
+  filter: grayscale(0%); 
+  opacity: 100%;
+}
+
+/*Art tiles*/
+
 .art {
   background-size: cover; 
   background-position: center top;
@@ -16,6 +29,8 @@ body.modal-open {
 
   }
 }
+
+/*Modals*/
 
 .modal {
   display: none; /* Hidden by default */
