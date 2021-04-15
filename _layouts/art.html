@@ -28,8 +28,8 @@
                   {% assign sortedRecords = site.data.art.records | sort: 'fields.date-time' %}
                   {% for record in sortedRecords %}
                   {% if record.fields.genre == page.genre %}
-                  <a href="#myModal{{ forloop.index }}" class="element-item {{ record.fields.genre }} {{ record.fields.categories }} {{ record.fields.availability[0] }} {{ record.fields.availability[1] }}  4u 12u$(medium) art" style="background-image:url('{{ record.fields.Attachments[0].url }}');>
-                    <button class="modal-button special center">{{ record.fields.name }}</button>
+                  <a href="#myModal{{ forloop.index }}" class="modal-button element-item {{ record.fields.genre }} {{ record.fields.categories }} {{ record.fields.availability[0] }} {{ record.fields.availability[1] }}  4u 12u$(medium) art" style="background-image:url('{{ record.fields.Attachments[0].url }}');">
+                    <button class="special center">{{ record.fields.name }}</button>
                   </a>
                   {% endif %}
                   {% endfor %}
@@ -56,7 +56,7 @@
 
                 <script type="text/javascript"> 
                 // Get the button that opens the modal
-                var btn = document.querySelectorAll("button.modal-button");
+                var btn = document.querySelectorAll("a.modal-button");
 
                 // All page modals
                 var modals = document.querySelectorAll('.modal');
