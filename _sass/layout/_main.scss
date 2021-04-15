@@ -5,6 +5,19 @@
 ///
 
 
+/* Tile Hovering */
+
+.desaturate { 
+	filter: grayscale(100%); 
+	opacity: 50%;
+}
+
+.desaturate:hover {
+	filter: grayscale(0%); 
+	opacity: 90%;
+}
+
+
 
 /* Main */
 
