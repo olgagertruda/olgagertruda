@@ -127,6 +127,21 @@
 			}
 		}
 
+		&.fiters {
+			background-color: _palette(accent4);
+			box-shadow: none;
+			color: _palette(accent1);
+
+			&:hover, &:active {
+				background-color: _palette(accent3);
+				color: _palette(accent1) !important;
+			}
+
+			&:active {
+				background-color: desaturate(darken(_palette(highlight), 15), 5);
+			}
+		}
+
 		&.disabled,
 		&:disabled {
 			@include vendor('pointer-events', 'none');
