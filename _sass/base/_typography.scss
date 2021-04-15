@@ -90,16 +90,18 @@
 
 	h4 {
 		font-size: 1.8em;
+		font-family: _font(family); 
 	}
 
 	h5 {
 		font-size: 1.6em;
+		font-family: _font(family); 
 	}
 
 	h6 {
 		font-size: 1em;
 		color: _palette(fg);
-		font-family: _font(header); 
+		font-family: _font(family); 
 	}
 
 	@include breakpoint(small) {

@@ -28,6 +28,7 @@
 		visibility: hidden;
 		width: 30%;
 		z-index: _misc(z-index-base) + 2;
+		text-transform: uppercase;
 
 		@include breakpoint(medium) {
 			width: 100%;
