@@ -5,7 +5,7 @@
 	<header id="header"{% if page.layout == "landing" %} class="alt style2"{% endif %}{% if page.layout == "home" %} class="alt"{% endif %}>
 		<a href="{{ '' | absolute_url }}" class="logo"><h1 style="margin: 0;">{{ site.title }}</h1><h4 style="margin: 0;">{{ site.subtitle }}</h4></a>
 		<nav>
-			<a href="#menu" style="text-decoration: none;"><h3 style="margin: 0;">Menu</h3></a>
+			<a href="#menu" style="text-decoration: none;"><h3 style="margin: 0; text-transform: uppercase;">Menu</h3></a>
 		</nav>
 	</header>
 
@@ -17,10 +17,12 @@
 			        <li><a href="{{ '' | absolute_url }}" style="text-decoration: none;"><h4 style="margin: 0;">{{ page.title }}</h4></a></li>
 		    	{% endif %}
 			{% endfor %}
+					<br/>
+					<li><a><h4>Categories</h4></a></li>
 			{% assign sorted_pages = site.html_pages | 'title' %}
 			{% for page in sorted_pages %}
 			    {% if page.layout != "home" and page.nav-menu == true | sort:'title' %}
-			        <li><a href="{{ page.url | absolute_url }}" style="text-decoration: none;"><h4 style="margin: 0;">{{ page.title }}</h4></a></li>
+			        <li><a href="{{ page.url | absolute_url }}" style="text-decoration: none;"><h5 style="margin: 0;">{{ page.title }}</h5></a></li>
 			    {% endif %}
 			{% endfor %}
 			{% for action in site.actions limit:1 %}
